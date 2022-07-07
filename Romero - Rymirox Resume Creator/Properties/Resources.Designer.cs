@@ -69,5 +69,15 @@ namespace Romero___Rymirox_Resume_Creator.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Purple_and_Yellow_Retro_Neon_Gradient_Starting_Soon_Twitch_Background__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Purple and Yellow Retro Neon Gradient Starting Soon Twitch Background (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
