@@ -1,0 +1,19 @@
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\bin\Debug\net6.0-windows\Romero - Rymirox Resume Creator.exe
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\bin\Debug\net6.0-windows\Romero - Rymirox Resume Creator.deps.json
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\bin\Debug\net6.0-windows\Romero - Rymirox Resume Creator.runtimeconfig.json
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\bin\Debug\net6.0-windows\Romero - Rymirox Resume Creator.dll
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\bin\Debug\net6.0-windows\ref\Romero - Rymirox Resume Creator.dll
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\bin\Debug\net6.0-windows\Romero - Rymirox Resume Creator.pdb
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.csproj.AssemblyReference.cache
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero___Rymirox_Resume_Creator.ProgramScreenForm.resources
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero___Rymirox_Resume_Creator.Properties.Resources.resources
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero___Rymirox_Resume_Creator.StartingScreenForm.resources
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.csproj.GenerateResource.cache
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.AssemblyInfoInputs.cache
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.AssemblyInfo.cs
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.csproj.CoreCompileInputs.cache
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.dll
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\ref\Romero - Rymirox Resume Creator.dll
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.pdb
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.genruntimeconfig.cache

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Romero - Rymirox Resume Creator/1.0.0": {
+        "runtime": {
+          "Romero - Rymirox Resume Creator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Romero - Rymirox Resume Creator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
