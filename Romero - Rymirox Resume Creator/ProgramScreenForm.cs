@@ -27,11 +27,7 @@ namespace Romero___Rymirox_Resume_Creator
 
             InitializeComponent();
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
-
-
         }
-
-
 
 
 
@@ -78,46 +74,46 @@ namespace Romero___Rymirox_Resume_Creator
 
 
     }
-        public class Program
-        {
-            public void Main()
-            {
-                string jsonString =
-                    @" {
-        ""firstName"": ""John Michael Vincent"",
-        ""middleName"": ""Pucnos"",
-        ""lastName"": ""Romero"",
-        ""homeAddress"": ""Marilao, Bulacan"",
-        ""contactNumber"": ""09280699382"",
-        ""emailAddress"": ""jm.romero011@yahoo.com"",
-        ""skill1"": ""Python Programming"",
-        ""skill2"": ""C# Programming"",
-        ""skill3"": ""SQL Programming"",
-        ""skill4"": ""Logic  Skills"",
-        ""skill5"": ""Communication Skills"",
-        ""interest1"": ""Computer Games"",
-        ""interest2"": ""Mathematics"",
-        ""interest3"": ""Programming"",
-        ""interest4"": ""Computer Based Software"",
-        ""interest5"": ""Logic"",
-        ""college"": ""Polytechnic University of the Philippines"",
-        ""collegeCourse"": ""Bachelor of Science in Computer Engineering"",
-        ""collegeYearGraduated"": ""Present - 2021"",
-        ""seniorHighSchool"": ""Polytechnic University of the Philippines"",
-        ""seniorHighSchoolStrand"": ""Science, Technology, Engineering, and Mathematics"",
-        ""seniorHighSchoolYearGraduated"": ""September 2021"",
-        ""juniorHighSchool"": ""Assemblywoman Felicita G. Bernardino Memorial Trade School"",
-        ""juniorHighSchoolYearGraduated"": ""March 2019"",
-        ""achievement1"": ""With High Honors (Weighted Average Grade of 96) - Senior High School"",
-        ""achievement2"": ""Regional Level Robotics Competition - 3rd Place"",
-        ""achievement3"": ""School Programming Quiz Bee (Grade 10) - 2nd Place"",
-        ""achievement4"": ""Certificate of Completion: Graphic Design Foundations: Layout and Composition - LinkedIn Learning"",
-        ""achievement5"": ""Cyber Security Foundation Professional Certificate - March 2021""
-        }
-        ";
-                infoResume? info = JsonSerializer.Deserialize<infoResume>(jsonString);
-            }
-        }
+        //public class Program
+        //{
+        //    public void Main()
+        //    {
+        //        string jsonString =
+        //            @" {
+        //""firstName"": ""John Michael Vincent"",
+        //""middleName"": ""Pucnos"",
+        //""lastName"": ""Romero"",
+        //""homeAddress"": ""Marilao, Bulacan"",
+        //""contactNumber"": ""09280699382"",
+        //""emailAddress"": ""jm.romero011@yahoo.com"",
+        //""skill1"": ""Python Programming"",
+        //""skill2"": ""C# Programming"",
+        //""skill3"": ""SQL Programming"",
+        //""skill4"": ""Logic  Skills"",
+        //""skill5"": ""Communication Skills"",
+        //""interest1"": ""Computer Games"",
+        //""interest2"": ""Mathematics"",
+        //""interest3"": ""Programming"",
+        //""interest4"": ""Computer Based Software"",
+        //""interest5"": ""Logic"",
+        //""college"": ""Polytechnic University of the Philippines"",
+        //""collegeCourse"": ""Bachelor of Science in Computer Engineering"",
+        //""collegeYearGraduated"": ""Present - 2021"",
+        //""seniorHighSchool"": ""Polytechnic University of the Philippines"",
+        //""seniorHighSchoolStrand"": ""Science, Technology, Engineering, and Mathematics"",
+        //""seniorHighSchoolYearGraduated"": ""September 2021"",
+        //""juniorHighSchool"": ""Assemblywoman Felicita G. Bernardino Memorial Trade School"",
+        //""juniorHighSchoolYearGraduated"": ""March 2019"",
+        //""achievement1"": ""With High Honors (Weighted Average Grade of 96) - Senior High School"",
+        //""achievement2"": ""Regional Level Robotics Competition - 3rd Place"",
+        //""achievement3"": ""School Programming Quiz Bee (Grade 10) - 2nd Place"",
+        //""achievement4"": ""Certificate of Completion: Graphic Design Foundations: Layout and Composition - LinkedIn Learning"",
+        //""achievement5"": ""Cyber Security Foundation Professional Certificate - March 2021""
+        //}
+        //";
+        //        infoResume? info = JsonSerializer.Deserialize<infoResume>(jsonString);
+        //    }
+        //}
 
 
        
@@ -256,8 +252,47 @@ namespace Romero___Rymirox_Resume_Creator
 
         private void buttonPSF1_Click(object sender, EventArgs e)
         {
+            string filename = "Rymirox Resume Creator.json";
+            string jsonstring = File.ReadAllText(filename);
+            infoResume info = JsonSerializer.Deserialize<infoResume>(jsonstring)!;
+
+            //Convert to string variable
+            //basicInformation
+            string FirstName = info.firstName;
+            string MiddleName = info.middleName;
+            string LastName = info.lastName;
+            string Address = info.homeAddress;
+            string EmailAddress = info.emailAddress;
+            string ContactNumber = info.contactNumber;
+
+            //skills
+            string Skill1 = info.skill1;
+            string Skill2 = info.skill2;
+            string Skill3 = info.skill3;
+            string Skill4 = info.skill4;
+            string Skill5 = info.skill5;
+
+
+            //Education
+            string College = info.college;
+            string CollegeCourse = info.collegeCourse;
+            string collegeYearGraduated = info.collegeYearGraduated;
+            string seniorHighSchool = info.seniorHighSchool;
+            string seinorHighSchoolStrand = info.seniorHighSchoolStrand;
+            string seniorHighYearGraduated = info.seniorHighSchoolYearGraduated;
+            string juniorHighSchool = info.juniorHighSchool;
+            string juniorHighSchoolYearGraduated = info.juniorHighSchoolYearGraduated;
+
+            //achievements
+            string achievement1 = info.achievement1;
+            string achievement2 = info.achievement2;
+            string achievement3 = info.achievement3;
+            string achievement4 = info.achievement4;
+            string achievement5 = info.achievement5;
+
             string lastName = textBoxPSF1.Text;
             string firstName = textBoxPSF2.Text;
+
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
 
@@ -274,10 +309,13 @@ namespace Romero___Rymirox_Resume_Creator
                     PdfPage page = document.AddPage();
 
                     // Get an XGraphics object for drawing
+                    string fileName1 = "bg for resume.png";
+                    string fileName2 = "2x2.jpg";
                     XGraphics gfx = XGraphics.FromPdfPage(page);
-
-                 
-                    
+                    XImage image = XImage.FromFile(fileName1);
+                    gfx.DrawImage(image, 0, 0, 611, 792);
+                    XImage image2x2 = XImage.FromFile(fileName2);
+                    gfx.DrawImage(image2x2, 70, 70, 150, 150); 
 
                     // Create a font
                     XFont normalfont = new XFont("Arial", 12, XFontStyle.Regular);
@@ -294,8 +332,7 @@ namespace Romero___Rymirox_Resume_Creator
 
                     // Draw the text
                     XRect rect = new XRect(210, 70, 250, 200);
-                    gfx.DrawString(txtbxFirstName.Text, normalfont, XBrushes.Black, new XRect(0, 0, page.Width, page.Height), XStringFormats.TopLeft);
-                    gfx.DrawString("JOHN MICHAEL VINCENT P. ROMERO", otherfont, XBrushes.Black, rect, XStringFormats.TopLeft);
+                    gfx.DrawString(info.firstName + " " + info.middleName + " " + info.lastName, otherfont, XBrushes.White, rect, XStringFormats.TopLeft);
 
                     // Save the document...
                     document.Save(saveFileDialog.FileName);
