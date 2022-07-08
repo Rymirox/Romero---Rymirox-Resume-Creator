@@ -66,6 +66,7 @@
             this.buttonPSF1.TabIndex = 1;
             this.buttonPSF1.Text = "Generate";
             this.buttonPSF1.UseVisualStyleBackColor = true;
+            this.buttonPSF1.Click += new System.EventHandler(this.buttonPSF1_Click);
             // 
             // labelPSF1
             // 
