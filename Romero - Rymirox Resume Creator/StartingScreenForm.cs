@@ -16,12 +16,14 @@ namespace Romero___Rymirox_Resume_Creator
 
         private void buttonSSF2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AboutScreenForm aboutScreenForm = new AboutScreenForm();    
+            aboutScreenForm.ShowDialog();
         }
 
         private void buttonSSF3_Click(object sender, EventArgs e)
         {
-
+            Application.Exit(); 
         }
     }
 }

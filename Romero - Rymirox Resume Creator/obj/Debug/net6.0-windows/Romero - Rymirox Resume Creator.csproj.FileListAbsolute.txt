@@ -19,3 +19,4 @@ C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Re
 C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.genruntimeconfig.cache
 C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero - Rymirox Resume Creator.csproj.CopyComplete
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero___Rymirox_Resume_Creator.AboutScreenForm.resources
