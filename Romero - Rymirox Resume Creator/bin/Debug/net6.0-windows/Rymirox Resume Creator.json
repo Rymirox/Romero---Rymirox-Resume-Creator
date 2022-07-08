@@ -1,34 +1,21 @@
-[
+
     {
-        "basicInformation": {
         "firstName": "John Michael Vincent",
         "middleName": "Pucnos",
         "lastName": "Romero",
         "homeAddress": "Marilao, Bulacan",
         "contactNumber": "09280699382",
-        "emailAddress": "jm.romero011@yahoo.com"  
-    }
-    },
-    {
-        "skills": {
+        "emailAddress": "jm.romero011@yahoo.com",
         "skill1": "Python Programming",
         "skill2": "C# Programming",
         "skill3": "SQL Programming",
         "skill4": "Logic  Skills",
-        "skill5": "Communication Skills"
-    }
-    },
-    {
-        "interests": {
+        "skill5": "Communication Skills",
         "interest1": "Computer Games",
         "interest2": "Mathematics",
         "interest3": "Programming",
         "interest4": "Computer Based Software",
-        "interest5": "Logic"
-        }
-    },
-    {
-        "educationalStatement": {
+        "interest5": "Logic",
         "college": "Polytechnic University of the Philippines",
         "collegeCourse": "Bachelor of Science in Computer Engineering",
         "collegeYearGraduated": "Present - 2021",
@@ -36,16 +23,11 @@
         "seniorHighSchoolStrand": "Science, Technology, Engineering, and Mathematics",
         "seniorHighSchoolYearGraduated": "September 2021",
         "juniorHighSchool": "Assemblywoman Felicita G. Bernardino Memorial Trade School",
-        "juniorHighSchoolYearGraduated": "March 2019"
-        }
-    },
-    {
-        "achievements": {
+        "juniorHighSchoolYearGraduated": "March 2019",
         "achievement1": "With High Honors (Weighted Average Grade of 96) - Senior High School",
         "achievement2": "Regional Level Robotics Competition - 3rd Place",
         "achievement3": "School Programming Quiz Bee (Grade 10) - 2nd Place",
         "achievement4": "Certificate of Completion: Graphic Design Foundations: Layout and Composition - LinkedIn Learning",
-        "achievement5": "Cyber Security Foundation Professional Certificate - March 2021"    
-        }
+        "achievement5": "Cyber Security Foundation Professional Certificate - March 2021"
     }
-]
+ 
