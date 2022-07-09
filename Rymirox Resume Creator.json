@@ -1,11 +1,11 @@
 [
     {
-        "firstName": "John Michael Vincent",
-        "middleName": "Pucnos",
-        "lastName": "Romero",
-        "homeAddress": "Marilao, Bulacan",
-        "contactNumber": "09280699382",
-        "emailAddress": "jm.romero011@yahoo.com",
+        "firstName": "",
+        "middleName": "",
+        "lastName": "",
+        "homeAddress": "",
+        "contactNumber": "",
+        "emailAddress": "",
         "skill1": "Python Programming",
         "skill2": "C# Programming",
         "skill3": "SQL Programming",
@@ -22,13 +22,13 @@
         "seniorHighSchool": "Polytechnic University of the Philippines",
         "seniorHighSchoolStrand": "Science, Technology, Engineering, and Mathematics",
         "seniorHighSchoolYearGraduated": "September 2021",
-        "juniorHighSchool": "Assemblywoman Felicita G. Bernardino Memorial Trade School",
+        "juniorHighSchool": "",
         "juniorHighSchoolYearGraduated": "March 2019",
-        "achievement1": "With High Honors (Weighted Average Grade of 96) - Senior High School",
-        "achievement2": "Regional Level Robotics Competition - 3rd Place",
-        "achievement3": "School Programming Quiz Bee (Grade 10) - 2nd Place",
-        "achievement4": "Certificate of Completion: Graphic Design Foundations - LinkedIn Learning",
-        "achievement5": "Cyber Security Foundation Professional Certificate - March 2021"
+        "achievement1": "With High Honors (Weighted Average Grade of ) - Senior High School",
+        "achievement2": "",
+        "achievement3": "",
+        "achievement4": "",
+        "achievement5": ""
     }
  
 ]

@@ -56,6 +56,7 @@ namespace Romero___Rymirox_Resume_Creator
             public string interest5 { get; set; }
 
             //educ 
+            public string student { get; set; }
             public string college { get; set; }
             public string collegeCourse { get; set; }
             public string collegeYearGraduated { get; set; }
@@ -71,6 +72,10 @@ namespace Romero___Rymirox_Resume_Creator
             public string achievement3 { get; set; }
             public string achievement4 { get; set; }
             public string achievement5 { get; set; }
+
+            //picture
+
+            public string picture { get; set; }
 
 
     }
@@ -166,9 +171,10 @@ namespace Romero___Rymirox_Resume_Creator
             try
             {
 
-                string filename = "Rymirox Resume Creator.json";
+                string filename = "Rymirox-Resume-Creator.json";
                 string jsonstring = File.ReadAllText(filename);
                 infoResume info = JsonSerializer.Deserialize<infoResume>(jsonstring)!;
+                MessageBox.Show("Your JSON File has been read. It will be presented now.");
 
                 //Convert to string variable
                 //basicInformation
@@ -188,6 +194,7 @@ namespace Romero___Rymirox_Resume_Creator
 
 
                 //Education
+                string studentcourse = info.student;
                 string College = info.college;
                 string CollegeCourse = info.collegeCourse;
                 string collegeYearGraduated = info.collegeYearGraduated;
@@ -203,6 +210,9 @@ namespace Romero___Rymirox_Resume_Creator
                 string achievement3 = info.achievement3;
                 string achievement4 = info.achievement4;
                 string achievement5 = info.achievement5;
+
+                //picture
+                string picture1 = info.picture;
 
                 //Display the info :>
                 //BasicInformation
@@ -252,7 +262,8 @@ namespace Romero___Rymirox_Resume_Creator
 
         private void buttonPSF1_Click(object sender, EventArgs e)
         {
-            string filename = "Rymirox Resume Creator.json";
+            //string filename = "Rymirox Resume Creator.json";
+            string filename = "Rymirox-Resume-Creator.json";
             string jsonstring = File.ReadAllText(filename);
             infoResume info = JsonSerializer.Deserialize<infoResume>(jsonstring)!;
 
@@ -274,6 +285,7 @@ namespace Romero___Rymirox_Resume_Creator
 
 
             //Education
+            string studentcourse = info.student;
             string College = info.college;
             string CollegeCourse = info.collegeCourse;
             string collegeYearGraduated = info.collegeYearGraduated;
@@ -289,6 +301,9 @@ namespace Romero___Rymirox_Resume_Creator
             string achievement3 = info.achievement3;
             string achievement4 = info.achievement4;
             string achievement5 = info.achievement5;
+
+            //picture
+            string picture1 = info.picture;
 
             string lastName = textBoxPSF1.Text;
             string firstName = textBoxPSF2.Text;
@@ -310,7 +325,7 @@ namespace Romero___Rymirox_Resume_Creator
 
                     // Get an XGraphics object for drawing
                     string fileName1 = "bg for resume.png";
-                    string fileName2 = "2x2.jpg";
+                    string fileName2 = info.lastName + " - " + info.picture;
                     string fileName3 = "emailicon.png";
                     string fileName4 = "contacticon.png";
                     string fileName5 = "addressicon.png";
@@ -327,15 +342,15 @@ namespace Romero___Rymirox_Resume_Creator
 
                     //emailicon
                     XImage imageEmail = XImage.FromFile(fileName3);
-                    gfx.DrawImage(imageEmail, 290, 144, 50, 50);
+                    gfx.DrawImage(imageEmail, 210, 144, 50, 50);
 
                     //contacticon
                     XImage imageContact = XImage.FromFile(fileName4);
-                    gfx.DrawImage(imageContact, 290, 174, 50, 50);
+                    gfx.DrawImage(imageContact, 210, 174, 50, 50);
 
                     //addressicon
                     XImage imageAddress = XImage.FromFile(fileName5);
-                    gfx.DrawImage(imageAddress, 290, 204, 50, 50);
+                    gfx.DrawImage(imageAddress, 210, 204, 50, 50);
 
 
                     // Create a font
@@ -354,12 +369,12 @@ namespace Romero___Rymirox_Resume_Creator
                     // Draw the text
                     //BasicInformation
                     XRect rectFullName = new XRect(230, 90, 250, 200);
-                    XRect rectRole = new XRect(300, 125, 250, 250);
-                    XRect rectEmail = new XRect(342, 160, 250, 250);
-                    XRect rectContact = new XRect(375, 192, 250, 250);
-                    XRect rectAddress = new XRect(365, 222, 250, 200);
+                    XRect rectRole = new XRect(230, 125, 250, 250);
+                    XRect rectEmail = new XRect(250, 160, 250, 250);
+                    XRect rectContact = new XRect(250, 192, 250, 250);
+                    XRect rectAddress = new XRect(250, 222, 250, 200);
                     gfx.DrawString(info.firstName + " " + info.middleName + " " + info.lastName, otherfont, XBrushes.White, rectFullName, XStringFormats.TopLeft);
-                    gfx.DrawString("COMPUTER ENGINEERING 1ST YEAR STUDENT", specialfont, XBrushes.White, rectRole, XStringFormats.TopLeft);
+                    gfx.DrawString(info.student + " 1ST YEAR STUDENT", specialfont, XBrushes.White, rectRole, XStringFormats.TopLeft);
                     gfx.DrawString(info.emailAddress, normalfont, XBrushes.White, rectEmail, XStringFormats.TopLeft);
                     gfx.DrawString(info.contactNumber, normalfont, XBrushes.White, rectContact, XStringFormats.TopLeft);
                     gfx.DrawString(info.homeAddress, normalfont, XBrushes.White, rectAddress, XStringFormats.TopLeft);
@@ -397,10 +412,14 @@ namespace Romero___Rymirox_Resume_Creator
                     //EducationalBackground
                     //College
                     XRect rectEducBackTitle = new XRect(170, 420, 250, 250);
-                    XRect rectCollege = new XRect(280, 450, 250, 250);
-                    XRect rectCourse = new XRect(180, 465, 250, 250);
-                    XRect rectCollegeName = new XRect(195, 480, 250, 250);
-                    XRect rectYearGrad = new XRect(265, 495, 250, 250);
+                    //XRect rectCollege = new XRect(270, 450, 250, 250);
+                    //XRect rectCourse = new XRect(180, 465, 250, 250);
+                    //XRect rectCollegeName = new XRect(195, 480, 250, 250);
+                    //XRect rectYearGrad = new XRect(265, 495, 250, 250);
+                    XRect rectCollege = new XRect(170, 450, 250, 250);
+                    XRect rectCourse = new XRect(170, 465, 250, 250);
+                    XRect rectCollegeName = new XRect(170, 480, 250, 250);
+                    XRect rectYearGrad = new XRect(170, 495, 250, 250);
 
                     gfx.DrawString("EDUCATIONAL BACKGROUND", otherfont, XBrushes.Gold, rectEducBackTitle, XStringFormats.TopLeft);
                     gfx.DrawString("College", boldfont, XBrushes.White, rectCollege, XStringFormats.TopLeft);
@@ -409,10 +428,15 @@ namespace Romero___Rymirox_Resume_Creator
                     gfx.DrawString(info.collegeYearGraduated, normalfont, XBrushes.White, rectYearGrad , XStringFormats.TopLeft);
 
                     //SeniorHighSchool
-                    XRect rectSHS = new XRect(250, 525, 250, 250);
-                    XRect rectStrand = new XRect(165, 540, 250, 250);
-                    XRect rectSHSName = new XRect(195, 555, 250, 250);
-                    XRect rectSHSYrGrad = new XRect(260, 570, 250, 250);
+                    //XRect rectSHS = new XRect(250, 525, 250, 250);
+                    //XRect rectStrand = new XRect(165, 540, 250, 250);
+                    //XRect rectSHSName = new XRect(195, 555, 250, 250);
+                    //XRect rectSHSYrGrad = new XRect(260, 570, 250, 250);
+
+                    XRect rectSHS = new XRect(170, 525, 250, 250);
+                    XRect rectStrand = new XRect(170, 540, 250, 250);
+                    XRect rectSHSName = new XRect(170, 555, 250, 250);
+                    XRect rectSHSYrGrad = new XRect(170, 570, 250, 250);
 
                     gfx.DrawString("Senior High School", boldfont, XBrushes.White, rectSHS, XStringFormats.TopLeft);
                     gfx.DrawString(info.seniorHighSchoolStrand, normalfont, XBrushes.White, rectStrand, XStringFormats.TopLeft);
@@ -436,9 +460,11 @@ namespace Romero___Rymirox_Resume_Creator
 
 
 
-
                     // Save the document...
                     document.Save(saveFileDialog.FileName);
+
+                    MessageBox.Show("Your resume is now generated, Check it in your specified path.");
+                    MessageBox.Show("Thank you for using my program! Yours Sincerely, Rymirox");
                 }
             }
         }
