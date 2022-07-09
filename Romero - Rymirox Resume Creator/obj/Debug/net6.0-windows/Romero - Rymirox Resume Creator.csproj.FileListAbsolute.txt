@@ -24,3 +24,4 @@ C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Re
 C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\bin\Debug\net6.0-windows\PdfSharp.dll
 C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\bin\Debug\net6.0-windows\de\PdfSharp.Charting.resources.dll
 C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\bin\Debug\net6.0-windows\de\PdfSharp.resources.dll
+C:\Users\Romero\source\repos\Romero - Rymirox Resume Creator\Romero - Rymirox Resume Creator\obj\Debug\net6.0-windows\Romero___Rymirox_Resume_Creator.AboutScreenForm2.resources

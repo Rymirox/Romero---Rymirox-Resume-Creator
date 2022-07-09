@@ -63,6 +63,46 @@ namespace Romero___Rymirox_Resume_Creator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aaa {
+            get {
+                object obj = ResourceManager.GetObject("aaa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clean_Aesthetic_Brand_Name_Initials_Circle_Badge_Logo__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Clean Aesthetic Brand Name Initials Circle Badge Logo (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clean_Aesthetic_Brand_Name_Initials_Circle_Badge_Logo__4_1 {
+            get {
+                object obj = ResourceManager.GetObject("Clean Aesthetic Brand Name Initials Circle Badge Logo (4)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clean_Aesthetic_Brand_Name_Initials_Circle_Badge_Logo__5_ {
+            get {
+                object obj = ResourceManager.GetObject("Clean Aesthetic Brand Name Initials Circle Badge Logo (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Purple_and_Yellow_Retro_Neon_Gradient_Starting_Soon_Twitch_Background {
             get {
                 object obj = ResourceManager.GetObject("Purple and Yellow Retro Neon Gradient Starting Soon Twitch Background", resourceCulture);

@@ -4,6 +4,9 @@
     <Compile Update="AboutScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AboutScreenForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ProgramScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
