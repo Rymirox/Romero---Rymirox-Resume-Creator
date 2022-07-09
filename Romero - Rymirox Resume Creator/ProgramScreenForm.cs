@@ -398,15 +398,42 @@ namespace Romero___Rymirox_Resume_Creator
                     //College
                     XRect rectEducBackTitle = new XRect(170, 420, 250, 250);
                     XRect rectCollege = new XRect(280, 450, 250, 250);
-                    XRect rectCourse = new XRect(180, 470, 250, 250);
-                    XRect rectCollegeName = new XRect(193, 490, 250, 250);
-                    XRect rectYearGrad = new XRect(265, 510, 250, 250);
+                    XRect rectCourse = new XRect(180, 465, 250, 250);
+                    XRect rectCollegeName = new XRect(195, 480, 250, 250);
+                    XRect rectYearGrad = new XRect(265, 495, 250, 250);
 
                     gfx.DrawString("EDUCATIONAL BACKGROUND", otherfont, XBrushes.Gold, rectEducBackTitle, XStringFormats.TopLeft);
                     gfx.DrawString("College", boldfont, XBrushes.White, rectCollege, XStringFormats.TopLeft);
                     gfx.DrawString(info.collegeCourse, normalfont, XBrushes.White, rectCourse , XStringFormats.TopLeft); 
                     gfx.DrawString(info.college, normalfont, XBrushes.White, rectCollegeName, XStringFormats.TopLeft);  
                     gfx.DrawString(info.collegeYearGraduated, normalfont, XBrushes.White, rectYearGrad , XStringFormats.TopLeft);
+
+                    //SeniorHighSchool
+                    XRect rectSHS = new XRect(250, 525, 250, 250);
+                    XRect rectStrand = new XRect(165, 540, 250, 250);
+                    XRect rectSHSName = new XRect(195, 555, 250, 250);
+                    XRect rectSHSYrGrad = new XRect(260, 570, 250, 250);
+
+                    gfx.DrawString("Senior High School", boldfont, XBrushes.White, rectSHS, XStringFormats.TopLeft);
+                    gfx.DrawString(info.seniorHighSchoolStrand, normalfont, XBrushes.White, rectStrand, XStringFormats.TopLeft);
+                    gfx.DrawString(info.seniorHighSchool, normalfont, XBrushes.White, rectSHSName, XStringFormats.TopLeft);
+                    gfx.DrawString(info.seniorHighSchoolYearGraduated, normalfont, XBrushes.White, rectSHSYrGrad, XStringFormats.TopLeft);
+
+                    //Skills
+                    XRect rectAchievements = new XRect(230, 600, 250, 250);
+                    XRect rectAchievement1 = new XRect(90, 630, 250, 250);
+                    XRect rectAchievement2 = new XRect(90, 645, 250, 250);
+                    XRect rectAchievement3 = new XRect(90, 660, 250, 250);
+                    XRect rectAchievement4 = new XRect(90, 675, 250, 250);
+                    XRect rectAchievement5 = new XRect(90, 690, 250, 250);
+
+                    gfx.DrawString("ACHIEVEMENTS", otherfont, XBrushes.Gold, rectAchievements, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.achievement1, normalfont, XBrushes.White, rectAchievement1, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.achievement2, normalfont, XBrushes.White, rectAchievement2, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.achievement3, normalfont, XBrushes.White, rectAchievement3, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.achievement4, normalfont, XBrushes.White, rectAchievement4, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.achievement5, normalfont, XBrushes.White, rectAchievement5, XStringFormats.TopLeft);
+
 
 
 
