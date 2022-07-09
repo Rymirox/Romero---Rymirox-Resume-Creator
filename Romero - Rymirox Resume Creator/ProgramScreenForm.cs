@@ -128,39 +128,39 @@ namespace Romero___Rymirox_Resume_Creator
 
         private void buttonPSF2_Click(object sender, EventArgs e)
         {
-            string jsonString =
-                   @" {
-        ""firstName"": ""John Michael Vincent"",
-        ""middleName"": ""Pucnos"",
-        ""lastName"": ""Romero"",
-        ""homeAddress"": ""Marilao, Bulacan"",
-        ""contactNumber"": ""09280699382"",
-        ""emailAddress"": ""jm.romero011@yahoo.com"",
-        ""skill1"": ""Python Programming"",
-        ""skill2"": ""C# Programming"",
-        ""skill3"": ""SQL Programming"",
-        ""skill4"": ""Logic  Skills"",
-        ""skill5"": ""Communication Skills"",
-        ""interest1"": ""Computer Games"",
-        ""interest2"": ""Mathematics"",
-        ""interest3"": ""Programming"",
-        ""interest4"": ""Computer Based Software"",
-        ""interest5"": ""Logic"",
-        ""college"": ""Polytechnic University of the Philippines"",
-        ""collegeCourse"": ""Bachelor of Science in Computer Engineering"",
-        ""collegeYearGraduated"": ""Present - 2021"",
-        ""seniorHighSchool"": ""Polytechnic University of the Philippines"",
-        ""seniorHighSchoolStrand"": ""Science, Technology, Engineering, and Mathematics"",
-        ""seniorHighSchoolYearGraduated"": ""September 2021"",
-        ""juniorHighSchool"": ""Assemblywoman Felicita G. Bernardino Memorial Trade School"",
-        ""juniorHighSchoolYearGraduated"": ""March 2019"",
-        ""achievement1"": ""With High Honors (Weighted Average Grade of 96) - Senior High School"",
-        ""achievement2"": ""Regional Level Robotics Competition - 3rd Place"",
-        ""achievement3"": ""School Programming Quiz Bee (Grade 10) - 2nd Place"",
-        ""achievement4"": ""Certificate of Completion: Graphic Design Foundations: Layout and Composition - LinkedIn Learning"",
-        ""achievement5"": ""Cyber Security Foundation Professional Certificate - March 2021""
-        }
-        ";
+        //    string jsonString =
+        //           @" {
+        //""firstName"": ""John Michael Vincent"",
+        //""middleName"": ""Pucnos"",
+        //""lastName"": ""Romero"",
+        //""homeAddress"": ""Marilao, Bulacan"",
+        //""contactNumber"": ""09280699382"",
+        //""emailAddress"": ""jm.romero011@yahoo.com"",
+        //""skill1"": ""Python Programming"",
+        //""skill2"": ""C# Programming"",
+        //""skill3"": ""SQL Programming"",
+        //""skill4"": ""Logic  Skills"",
+        //""skill5"": ""Communication Skills"",
+        //""interest1"": ""Computer Games"",
+        //""interest2"": ""Mathematics"",
+        //""interest3"": ""Programming"",
+        //""interest4"": ""Computer Based Software"",
+        //""interest5"": ""Logic"",
+        //""college"": ""Polytechnic University of the Philippines"",
+        //""collegeCourse"": ""Bachelor of Science in Computer Engineering"",
+        //""collegeYearGraduated"": ""Present - 2021"",
+        //""seniorHighSchool"": ""Polytechnic University of the Philippines"",
+        //""seniorHighSchoolStrand"": ""Science, Technology, Engineering, and Mathematics"",
+        //""seniorHighSchoolYearGraduated"": ""September 2021"",
+        //""juniorHighSchool"": ""Assemblywoman Felicita G. Bernardino Memorial Trade School"",
+        //""juniorHighSchoolYearGraduated"": ""March 2019"",
+        //""achievement1"": ""With High Honors (Weighted Average Grade of 96) - Senior High School"",
+        //""achievement2"": ""Regional Level Robotics Competition - 3rd Place"",
+        //""achievement3"": ""School Programming Quiz Bee (Grade 10) - 2nd Place"",
+        //""achievement4"": ""Certificate of Completion: Graphic Design Foundations: Layout and Composition - LinkedIn Learning"",
+        //""achievement5"": ""Cyber Security Foundation Professional Certificate - March 2021""
+        //}
+        //";
 
 
             try
@@ -311,28 +311,104 @@ namespace Romero___Rymirox_Resume_Creator
                     // Get an XGraphics object for drawing
                     string fileName1 = "bg for resume.png";
                     string fileName2 = "2x2.jpg";
+                    string fileName3 = "emailicon.png";
+                    string fileName4 = "contacticon.png";
+                    string fileName5 = "addressicon.png";
+                    
                     XGraphics gfx = XGraphics.FromPdfPage(page);
+                    
+                    //background for resume
                     XImage image = XImage.FromFile(fileName1);
-                    gfx.DrawImage(image, 0, 0, 611, 792);
+                    gfx.DrawImage(image, 0, 0, 612, 792);
+                    
+                    //2x2 picture
                     XImage image2x2 = XImage.FromFile(fileName2);
-                    gfx.DrawImage(image2x2, 70, 70, 150, 150); 
+                    gfx.DrawImage(image2x2, 50, 90, 150, 150);
+
+                    //emailicon
+                    XImage imageEmail = XImage.FromFile(fileName3);
+                    gfx.DrawImage(imageEmail, 290, 144, 50, 50);
+
+                    //contacticon
+                    XImage imageContact = XImage.FromFile(fileName4);
+                    gfx.DrawImage(imageContact, 290, 174, 50, 50);
+
+                    //addressicon
+                    XImage imageAddress = XImage.FromFile(fileName5);
+                    gfx.DrawImage(imageAddress, 290, 204, 50, 50);
+
 
                     // Create a font
-                    XFont normalfont = new XFont("Arial", 12, XFontStyle.Regular);
-                    XFont boldfont = new XFont("Arial", 15, XFontStyle.Bold);
-                    XFont otherfont  = new XFont("Rockwell", 18, XFontStyle.Regular);
+                    XFont normalfont = new XFont("Rockwell", 12, XFontStyle.Regular);
+                    XFont specialfont = new XFont("Impact", 12, XFontStyle.Italic);
+                    XFont boldfont = new XFont("Rockwell", 12, XFontStyle.Bold);
+                    XFont otherfont  = new XFont("Rockwell", 18, XFontStyle.Bold);
 
                     //Draw rectangle
-                    XPen pen = new XPen(XColors.Navy, Math.PI);
+                    XPen pen = new XPen(XColors.Gold, Math.PI);
                     //gfx.DrawRectangle(pen, XBrushes.DarkOrange, 150, 80, 60, 60);
                     //gfx.DrawRectangle(pen, 10, 0, 100, 60);
-
-                    //Add margin
+                    gfx.DrawRectangle(pen, 305, 270, 1, 130);
 
 
                     // Draw the text
-                    XRect rect = new XRect(210, 70, 250, 200);
-                    gfx.DrawString(info.firstName + " " + info.middleName + " " + info.lastName, otherfont, XBrushes.White, rect, XStringFormats.TopLeft);
+                    //BasicInformation
+                    XRect rectFullName = new XRect(230, 90, 250, 200);
+                    XRect rectRole = new XRect(300, 125, 250, 250);
+                    XRect rectEmail = new XRect(342, 160, 250, 250);
+                    XRect rectContact = new XRect(375, 192, 250, 250);
+                    XRect rectAddress = new XRect(365, 222, 250, 200);
+                    gfx.DrawString(info.firstName + " " + info.middleName + " " + info.lastName, otherfont, XBrushes.White, rectFullName, XStringFormats.TopLeft);
+                    gfx.DrawString("COMPUTER ENGINEERING 1ST YEAR STUDENT", specialfont, XBrushes.White, rectRole, XStringFormats.TopLeft);
+                    gfx.DrawString(info.emailAddress, normalfont, XBrushes.White, rectEmail, XStringFormats.TopLeft);
+                    gfx.DrawString(info.contactNumber, normalfont, XBrushes.White, rectContact, XStringFormats.TopLeft);
+                    gfx.DrawString(info.homeAddress, normalfont, XBrushes.White, rectAddress, XStringFormats.TopLeft);
+
+                    //Skills
+                    XRect rectSkillsTitle = new XRect(120, 270, 250, 250);                    
+                    XRect rectSkill1 = new XRect(90, 300, 250, 250);
+                    XRect rectSkill2 = new XRect(90, 320, 250, 250);
+                    XRect rectSkill3 = new XRect(90, 340, 250, 250);
+                    XRect rectSkill4 = new XRect(90, 360, 250, 250);
+                    XRect rectSkill5 = new XRect(90, 380, 250, 250);
+
+                    gfx.DrawString("SKILLS", otherfont, XBrushes.Gold, rectSkillsTitle, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.skill1, normalfont, XBrushes.White, rectSkill1, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.skill2, normalfont, XBrushes.White, rectSkill2, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.skill3, normalfont, XBrushes.White, rectSkill3, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.skill4, normalfont, XBrushes.White, rectSkill4, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.skill5, normalfont, XBrushes.White, rectSkill5, XStringFormats.TopLeft);
+
+                    //Interests
+                    XRect rectInterestsTitle = new XRect(415, 270, 250, 250);
+                    XRect rectInterest1 = new XRect(395, 300, 250, 250);
+                    XRect rectInterest2 = new XRect(395, 320, 250, 250);
+                    XRect rectInterest3 = new XRect(395, 340, 250, 250);
+                    XRect rectInterest4 = new XRect(395, 360, 250, 250);
+                    XRect rectInterest5 = new XRect(395, 380, 250, 250);
+
+                    gfx.DrawString("INTERESTS", otherfont, XBrushes.Gold, rectInterestsTitle, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.interest1, normalfont, XBrushes.White, rectInterest1, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.interest2, normalfont, XBrushes.White, rectInterest2, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.interest3, normalfont, XBrushes.White, rectInterest3, XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.interest4, normalfont, XBrushes.White, rectInterest4 , XStringFormats.TopLeft);
+                    gfx.DrawString("•   " + info.interest5 , normalfont, XBrushes.White, rectInterest5 , XStringFormats.TopLeft);
+
+                    //EducationalBackground
+                    //College
+                    XRect rectEducBackTitle = new XRect(170, 420, 250, 250);
+                    XRect rectCollege = new XRect(280, 450, 250, 250);
+                    XRect rectCourse = new XRect(180, 470, 250, 250);
+                    XRect rectCollegeName = new XRect(193, 490, 250, 250);
+                    XRect rectYearGrad = new XRect(265, 510, 250, 250);
+
+                    gfx.DrawString("EDUCATIONAL BACKGROUND", otherfont, XBrushes.Gold, rectEducBackTitle, XStringFormats.TopLeft);
+                    gfx.DrawString("College", boldfont, XBrushes.White, rectCollege, XStringFormats.TopLeft);
+                    gfx.DrawString(info.collegeCourse, normalfont, XBrushes.White, rectCourse , XStringFormats.TopLeft); 
+                    gfx.DrawString(info.college, normalfont, XBrushes.White, rectCollegeName, XStringFormats.TopLeft);  
+                    gfx.DrawString(info.collegeYearGraduated, normalfont, XBrushes.White, rectYearGrad , XStringFormats.TopLeft);
+
+
 
                     // Save the document...
                     document.Save(saveFileDialog.FileName);
